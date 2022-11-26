@@ -61,3 +61,10 @@ function flagCounter() {
 //         elFlag.innerHTML = `0${--gLevel.MINES}`
 //     }
 // }
+
+function renderCell(location, value) {
+    const cellSelector = '.' + getClassName(location) // cell-i-j
+    const elCell = document.querySelector(cellSelector)
+    elCell.innerHTML = value
+
+}

@@ -12,7 +12,7 @@ var isFirstClick = false
 var gLevel = {
     SIZE: 8,
     MINES: 5
-};
+}
 var gGame = {
     isOn: false,
     shownCount: 0,
@@ -136,13 +136,6 @@ function getMinesNegsCount(board, rowIdx, colIdx) {
     return minesNegsCount
 }
 
-function renderCell(location, value) {
-    const cellSelector = '.' + getClassName(location) // cell-i-j
-    const elCell = document.querySelector(cellSelector)
-    elCell.innerHTML = value
-
-}
-
 
 function cellClicked(event, elCell, i, j) {
 
@@ -224,7 +217,7 @@ function cellClicked(event, elCell, i, j) {
 
 
 function checkGameOver() {
-    var lives = 3
+    // var lives = 3
     var isGameOver = false
     var isWinner
     var numsCount = 0
@@ -321,7 +314,6 @@ function expandShown(board, elCell, rowIdx, colIdx, ev) {
 }
 
 
-
 function setLevel(btnlevel) {
 
     gLevel.SIZE = parseInt(btnlevel.classList[0])
@@ -331,8 +323,6 @@ function setLevel(btnlevel) {
 
     initGame()
 }
-
-
 
 
 function createMines(board, iIdx, jIdx) {
@@ -356,7 +346,6 @@ function showAllMines() {
         }
     }
 }
-
 
 
 function checkFlagsCount() {
