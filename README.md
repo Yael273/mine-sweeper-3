@@ -1,6 +1,6 @@
 # mine-sweeper
 
-My first project at Coding Academy.
+My first project in Coding Academy - a minesweeper game built in 4 days, using vanilla CSS.
 
 ## See it in Action - [Mine Sweeper](https://yael273.github.io/mine-sweeper-3/)
 
